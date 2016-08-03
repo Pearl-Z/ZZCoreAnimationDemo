@@ -135,13 +135,40 @@ extern struct ZZCoordinates ZZCoordinatesMake(CGFloat x,CGFloat y,CGFloat z);
 - (CASpringAnimation *)zz_springAnimationWithMass:(CGFloat)mass stiffness:(CGFloat)stiffness damping:(CGFloat)damping initialVelocity:(CGFloat)initialVelocity basicAnimationType:(ZZBasicAnimationType)type coordinates:(struct ZZCoordinates)coordinates angle:(float)angle completedBlock:(void (^)(BOOL flag))completed;
 
 
-
-
+/*!
+ *  @brief 关键帧动画快速封装
+ *
+ *  @param path      路径
+ *  @param duration  执行时间
+ *  @param completed 完成回调
+ *
+ *  @return CAKeyframeAnimation
+ */
 - (CAKeyframeAnimation *)zz_keyframeAnimationWithPath:(UIBezierPath *)path duration:(NSTimeInterval)duration completedBlock:(void (^)(BOOL flag))completed;
 
+/*!
+ *  @brief 关键帧动画快速封装
+ *
+ *  @param values    值数组
+ *  @param duration  执行时间
+ *  @param completed 完成回调
+ *
+ *  @return CAKeyframeAnimation
+ */
 - (CAKeyframeAnimation *)zz_keyframeAnimationWithValues:(NSArray *)values duration:(NSTimeInterval)duration completedBlock:(void (^)(BOOL flag))completed;
 
 
+/*!
+ *  @brief 画路径的动画
+ *
+ *  @param path      路径
+ *  @param lineWidth 线宽
+ *  @param lineColor 线颜色
+ *  @param duration  绘画时间
+ *  @param completed 完成回调
+ *
+ *  @return CAShapeLayer 绘画路径的layer
+ */
 - (CAShapeLayer *)zz_drawPathAnimationWithPath:(UIBezierPath *)path lineWidth:(CGFloat)lineWidth lineColor:(CGColorRef)lineColor duration:(NSTimeInterval)duration completedBlock:(void (^)(BOOL flag))completed;
 
 
