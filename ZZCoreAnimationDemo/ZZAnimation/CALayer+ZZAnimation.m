@@ -150,6 +150,11 @@ struct ZZCoordinates ZZCoordinatesMake(CGFloat x,CGFloat y,CGFloat z){
 
 #pragma mark - ZZSpringAnimation
 - (CASpringAnimation *)zz_springAnimationWithMass:(CGFloat)mass stiffness:(CGFloat)stiffness damping:(CGFloat)damping initialVelocity:(CGFloat)initialVelocity basicAnimationType:(ZZBasicAnimationType)type coordinates:(struct ZZCoordinates)coordinates angle:(float)angle completedBlock:(void (^)(BOOL flag))completed{
+    
+    if([[[UIDevice currentDevice] systemVersion] floatValue] < 9.0){
+        return nil;
+    }
+    
     ZZSpringAnimation *animation = [ZZSpringAnimation animationWithKeyPath:@"transform"];
     animation.fromValue = [NSValue valueWithCATransform3D:self.transform];
     switch (type) {

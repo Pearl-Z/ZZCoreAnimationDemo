@@ -119,7 +119,7 @@ extern struct ZZCoordinates ZZCoordinatesMake(CGFloat x,CGFloat y,CGFloat z);
 - (CAAnimationGroup *)zz_animationGroupWithAnimations:(NSArray *)animations duration:(float)duration completedBlock:(void (^)(BOOL flag))completed;
 
 /*!
- *  @brief 弹性动画的快速封装
+ *  @brief 弹性动画的快速封装 （9.0以上才能使用）
  *
  *  @param mass            质量
  *  @param stiffness       刚度系数
@@ -132,7 +132,7 @@ extern struct ZZCoordinates ZZCoordinatesMake(CGFloat x,CGFloat y,CGFloat z);
  *
  *  @return CASpringAnimation
  */
-- (CASpringAnimation *)zz_springAnimationWithMass:(CGFloat)mass stiffness:(CGFloat)stiffness damping:(CGFloat)damping initialVelocity:(CGFloat)initialVelocity basicAnimationType:(ZZBasicAnimationType)type coordinates:(struct ZZCoordinates)coordinates angle:(float)angle completedBlock:(void (^)(BOOL flag))completed;
+- (CASpringAnimation *)zz_springAnimationWithMass:(CGFloat)mass stiffness:(CGFloat)stiffness damping:(CGFloat)damping initialVelocity:(CGFloat)initialVelocity basicAnimationType:(ZZBasicAnimationType)type coordinates:(struct ZZCoordinates)coordinates angle:(float)angle completedBlock:(void (^)(BOOL flag))completed NS_AVAILABLE_IOS(9_0);
 
 
 /*!
