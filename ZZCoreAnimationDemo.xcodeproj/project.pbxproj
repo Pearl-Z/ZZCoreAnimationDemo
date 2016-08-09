@@ -10,6 +10,12 @@
 		3347F0D71D51CA2100ADE849 /* CAKeyfromeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0D61D51CA2100ADE849 /* CAKeyfromeAnimationView.m */; };
 		3347F0DD1D51E1F900ADE849 /* CALayer+ZZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0DA1D51E1F900ADE849 /* CALayer+ZZAnimation.m */; };
 		3347F0DE1D51E1F900ADE849 /* ZZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0DC1D51E1F900ADE849 /* ZZAnimation.m */; };
+		3347F0EF1D59735900ADE849 /* UIEffectDesignerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0EE1D59735900ADE849 /* UIEffectDesignerVc.m */; };
+		3347F0F51D59776300ADE849 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0F21D59776300ADE849 /* NSData+Base64.m */; };
+		3347F0F61D59776300ADE849 /* UIEffectDesignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0F41D59776300ADE849 /* UIEffectDesignerView.m */; };
+		3347F0F81D59781D00ADE849 /* Untitled.ped in Resources */ = {isa = PBXBuildFile; fileRef = 3347F0F71D59781D00ADE849 /* Untitled.ped */; };
+		3347F0FB1D5988C400ADE849 /* CAEmitterLayerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3347F0FA1D5988C400ADE849 /* CAEmitterLayerVc.m */; };
+		3347F0FD1D598A1700ADE849 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3347F0FC1D598A1700ADE849 /* spark.png */; };
 		33A979411D4706C400FFE35D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A979401D4706C400FFE35D /* main.m */; };
 		33A979441D4706C400FFE35D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A979431D4706C400FFE35D /* AppDelegate.m */; };
 		33A9794A1D4706C400FFE35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A979481D4706C400FFE35D /* Main.storyboard */; };
@@ -52,6 +58,16 @@
 		3347F0DA1D51E1F900ADE849 /* CALayer+ZZAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ZZAnimation.m"; sourceTree = "<group>"; };
 		3347F0DB1D51E1F900ADE849 /* ZZAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAnimation.h; sourceTree = "<group>"; };
 		3347F0DC1D51E1F900ADE849 /* ZZAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAnimation.m; sourceTree = "<group>"; };
+		3347F0ED1D59735900ADE849 /* UIEffectDesignerVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIEffectDesignerVc.h; sourceTree = "<group>"; };
+		3347F0EE1D59735900ADE849 /* UIEffectDesignerVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIEffectDesignerVc.m; sourceTree = "<group>"; };
+		3347F0F11D59776300ADE849 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3347F0F21D59776300ADE849 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		3347F0F31D59776300ADE849 /* UIEffectDesignerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIEffectDesignerView.h; sourceTree = "<group>"; };
+		3347F0F41D59776300ADE849 /* UIEffectDesignerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIEffectDesignerView.m; sourceTree = "<group>"; };
+		3347F0F71D59781D00ADE849 /* Untitled.ped */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Untitled.ped; sourceTree = "<group>"; };
+		3347F0F91D5988C400ADE849 /* CAEmitterLayerVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerVc.h; sourceTree = "<group>"; };
+		3347F0FA1D5988C400ADE849 /* CAEmitterLayerVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerVc.m; sourceTree = "<group>"; };
+		3347F0FC1D598A1700ADE849 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		33A9793C1D4706C400FFE35D /* ZZCoreAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZCoreAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A979401D4706C400FFE35D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33A979421D4706C400FFE35D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +135,17 @@
 			path = ZZAnimation;
 			sourceTree = "<group>";
 		};
+		3347F0F01D59776300ADE849 /* UIEffectDesignerView */ = {
+			isa = PBXGroup;
+			children = (
+				3347F0F11D59776300ADE849 /* NSData+Base64.h */,
+				3347F0F21D59776300ADE849 /* NSData+Base64.m */,
+				3347F0F31D59776300ADE849 /* UIEffectDesignerView.h */,
+				3347F0F41D59776300ADE849 /* UIEffectDesignerView.m */,
+			);
+			path = UIEffectDesignerView;
+			sourceTree = "<group>";
+		};
 		33A979331D4706C400FFE35D = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +169,7 @@
 		33A9793E1D4706C400FFE35D /* ZZCoreAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3347F0F01D59776300ADE849 /* UIEffectDesignerView */,
 				3347F0D81D51E1F900ADE849 /* ZZAnimation */,
 				33E1568A1D476EFC00B9F645 /* AnimationDemo */,
 				33A979721D47104200FFE35D /* DemoTableVc.h */,
@@ -151,6 +179,8 @@
 				33A9794B1D4706C400FFE35D /* Assets.xcassets */,
 				33A9794D1D4706C400FFE35D /* LaunchScreen.storyboard */,
 				33A979501D4706C400FFE35D /* Info.plist */,
+				3347F0F71D59781D00ADE849 /* Untitled.ped */,
+				3347F0FC1D598A1700ADE849 /* spark.png */,
 				33A9793F1D4706C400FFE35D /* Supporting Files */,
 			);
 			path = ZZCoreAnimationDemo;
@@ -209,6 +239,10 @@
 				3347F0D61D51CA2100ADE849 /* CAKeyfromeAnimationView.m */,
 				33A979751D47148700FFE35D /* CAAnimationGroupVc.h */,
 				33A979761D47148700FFE35D /* CAAnimationGroupVc.m */,
+				3347F0F91D5988C400ADE849 /* CAEmitterLayerVc.h */,
+				3347F0FA1D5988C400ADE849 /* CAEmitterLayerVc.m */,
+				3347F0ED1D59735900ADE849 /* UIEffectDesignerVc.h */,
+				3347F0EE1D59735900ADE849 /* UIEffectDesignerVc.m */,
 			);
 			name = AnimationDemo;
 			sourceTree = "<group>";
@@ -322,7 +356,9 @@
 				33A9794C1D4706C400FFE35D /* Assets.xcassets in Resources */,
 				33A9794A1D4706C400FFE35D /* Main.storyboard in Resources */,
 				33E1567A1D4748B800B9F645 /* img1.jpeg in Resources */,
+				3347F0FD1D598A1700ADE849 /* spark.png in Resources */,
 				33E1567C1D4748B800B9F645 /* img3.jpeg in Resources */,
+				3347F0F81D59781D00ADE849 /* Untitled.ped in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,15 +384,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E156931D47767A00B9F645 /* CASpringAnimationVc.m in Sources */,
+				3347F0EF1D59735900ADE849 /* UIEffectDesignerVc.m in Sources */,
 				33E1568D1D47764300B9F645 /* CABasicAnimationVc.m in Sources */,
 				33E156901D47765800B9F645 /* CAKeyframeAnimationVc.m in Sources */,
 				3347F0D71D51CA2100ADE849 /* CAKeyfromeAnimationView.m in Sources */,
 				33A979441D4706C400FFE35D /* AppDelegate.m in Sources */,
 				33A979771D47148700FFE35D /* CAAnimationGroupVc.m in Sources */,
 				33A979411D4706C400FFE35D /* main.m in Sources */,
+				3347F0F61D59776300ADE849 /* UIEffectDesignerView.m in Sources */,
 				3347F0DE1D51E1F900ADE849 /* ZZAnimation.m in Sources */,
 				33A979741D47104200FFE35D /* DemoTableVc.m in Sources */,
 				3347F0DD1D51E1F900ADE849 /* CALayer+ZZAnimation.m in Sources */,
+				3347F0F51D59776300ADE849 /* NSData+Base64.m in Sources */,
+				3347F0FB1D5988C400ADE849 /* CAEmitterLayerVc.m in Sources */,
 				33A979801D4714EC00FFE35D /* CATransitionVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

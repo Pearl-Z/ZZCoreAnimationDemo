@@ -12,6 +12,8 @@
 #import "CASpringAnimationVc.h"
 #import "CAKeyframeAnimationVc.h"
 #import "CABasicAnimationVc.h"
+#import "UIEffectDesignerVc.h"
+#import "CAEmitterLayerVc.h"
 
 @implementation DemoTableVc
 
@@ -29,10 +31,13 @@
 #pragma mark - tabelview delegate & datasorce
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section) {
+        return 2;
+    }
     return 5;
 }
 
@@ -45,6 +50,14 @@
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = 0;
+    if (indexPath.section) {
+        if (!indexPath.row) {
+            cell.textLabel.text = @"粒子动画(CAEmitterLayer)";
+        }else{
+            cell.textLabel.text = @"粒子动画(UIEffectDesignerView)";
+        }
+        return cell;
+    }
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text = @"转场动画(CATransition)";
@@ -65,7 +78,7 @@
         case 4:
             cell.textLabel.text = @"动画组(CAAnimationGroup)";
             break;
-        
+
         default:
             break;
     }
@@ -75,10 +88,25 @@
 
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 80;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 20;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section) {
+        if (!indexPath.row) {
+            CAEmitterLayerVc *vc = [[CAEmitterLayerVc alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }else{
+            UIEffectDesignerVc *vc = [[UIEffectDesignerVc  alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        return;
+    }
+    
     switch (indexPath.row) {
         case 0:{
             CATransitionVc *vc = [[CATransitionVc alloc] init];
